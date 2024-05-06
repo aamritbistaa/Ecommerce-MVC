@@ -1,0 +1,40 @@
+﻿@model List<Products>
+
+@{
+    ViewData["Title"] = "Product page";
+}
+
+<div class="container">
+     <div class="col-lg-12 ">
+         <div class="">
+             <h1>Featured Product</h1>
+         </div>
+     </div>
+    
+
+    @foreach(var product in Model)
+    {
+        <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="card mb-4 grey-bg" style="height:500px">
+                <img src="~/@product.Image" alt="Card Image" class="card-img-top" style="height:300px"/>
+                <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    
+                <div class="btn-group-lg">
+                    <h3 class="card-title">
+                                <label class="text-uppercase" style="color:black">@product.Name</label>
+                                <label style="color:red" class="font-size-30" >$@product.Price</label>
+
+</h3>
+                    <a asp-action="Details" asp-controller="Product" asp-route-Id="@product.Id" class="btn btn-primary btn-outline-info">Details</a>
+
+                    </div>
+                
+                
+                </div>
+                </div>
+                </div>
+            </div>
+    }
+</div>
+</div>

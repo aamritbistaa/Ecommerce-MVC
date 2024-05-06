@@ -1,0 +1,85 @@
+﻿@model Products
+
+@{
+    ViewData["Title"] = "Product Detail";
+}
+
+<div class="container">
+     <div class="col-lg-12 ">
+         <div class="">
+             <h2 class="text-info">Product Details</h2>
+         </div>
+     </div>
+
+    <form asp-action="ProductDetail" method="post" enctype="multipart/form-data">
+        <div class="border row p-4">
+            
+             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+             <div class="col-8" style="">
+                 <div class="form-group-row">
+                     <div class="col-md-4">
+                         <label asp-for="Name"></label>
+                     </div>
+                    <div class="col-md-"8>
+                        <input asp-for="Name" disabled class="form-control"></input>
+                    </div>
+                 </div>
+                <div class="form-group-row">
+                    <div class="col-md-4">
+                        <label asp-for="Price"></label>
+                    </div>
+                    <div class="col-md-" 8>
+                        <input asp-for="Price" disabled class="form-control"></input>
+                    </div>
+                </div>
+                <div class="form-group-row">
+                    <div class="col-md-4">
+                        <label asp-for="ProductColor"></label>
+                    </div>
+                    <div class="col-md-" 8>
+                        <input asp-for="ProductColor" disabled class="form-control"></input>
+                    </div>
+                </div>
+                <div class="form-group-row">
+                    <div class="col-md-4">
+                        <label asp-for="ProductTypeId"></label>
+                    </div>
+                    <div class="col-md-" 8>
+                        <input asp-for="ProductTypes.ProductType" disabled class="form-control"></input>
+                    </div>
+                </div>
+                <button class="btn btn-info mt-4 w-100" type="submit" asp-route-Id="@Model.Id">Add to cart</button>
+                <button class="btn btn-info mt-4 w-100" type="submit" asp-action="Index">Back to List</button>
+
+             </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3">
+                <img src="~/@Model.Image" width="100%" height="250px" />
+                @if (Model.isAvailable)
+                {
+                    <div class="text-info" style="font-size:24px; font-weight:600;">In stock</div>
+                }
+                else
+                {
+                    <div class="text-danger " style="font-size:24px; font-weight:600;">Out of stock</div>
+
+                    
+                    }
+                </div>
+         </div>
+        
+     </form>
+    
+
+   
+ </div>
+</div>
+
+
+@section Scripts {
+    @* Client side validation *@
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

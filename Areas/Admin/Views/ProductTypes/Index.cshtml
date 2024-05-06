@@ -1,0 +1,59 @@
+﻿@model List<ProductTypes>
+
+<h2>
+    Product Types
+</h2>
+<hr/>
+<div class="row">
+   
+    <div class=" text-end">
+        <a asp-action="Create" class="btn btn-primary  ">Create New item</a>
+    </div>
+</div>
+
+<div>
+    <table class="table border mt-3">
+        <thead>
+            <tr class="table-info">
+                
+                <th class="text-start" colspan="2">
+                    Product Type
+                    
+                </th>
+                <th></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+
+        @foreach(var item in Model)
+        {
+            <tr>
+                    <td>@item.ProductType</td>
+                    <td>
+                        <partial name="_ButtonPartial" model="@item.Id"/>
+                    </td>
+
+            </tr>
+        }
+
+        </tbody>
+    </table>
+</div>
+
+
+@section scripts{
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js">
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var success = '@TempData["success"]';
+            if(success!=''){
+                alertify.success(success);
+            }
+        })    
+    </script>
+
+
+}

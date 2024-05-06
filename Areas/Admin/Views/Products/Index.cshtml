@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Products>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="text-info">Product List</h2>
+        </div>
+        <div class="col-lg-6 text-end">
+            <a asp-action="Create" class="btn btn-primary">Create</a>
+        </div>
+        <form action="post">
+            <div class="row">
+                <div class="col-lg-3">
+                    <input type="number" class="form-control" name="lowAmount" placeholder="Lowest Number"/>
+                </div>
+                <div class="col-lg-3">
+                    <input type="number" class="form-control" name="largeAmount" placeholder="Highest Number"/>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" class="form-control" name="search" placeholder="Search" />
+                </div>
+                <div class="col-lg-3">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+
+        <table class="table table-striped border" id="myTable">
+            <thead>
+
+                <tr class="table-info">
+                    <th>
+                        @Html.DisplayNameFor(c=>c.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(c => c.Price)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(c => c.isAvailable)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(c => c.ProductColor)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(c => c.ProductTypeId)
+                    </th>
+                    <th class="text-start" colspan="2">
+                        @Html.DisplayNameFor(c => c.SpecialTagId)
+
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Price</td>
+                        <td>@item.isAvailable</td>
+                        <td>@item.ProductColor</td>
+                        <td>@item.ProductTypes.ProductType</td>
+                        <td>@item.SpecialTags.SpecialTag</td>
+                        <td>
+                            <partial name="_ButtonPartial" model="@item.Id"/>
+                        </td>
+                    </tr>
+                    
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>

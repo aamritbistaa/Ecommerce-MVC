@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\models\\companyuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:models\\companyuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\areas\\ui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:areas\\ui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\areas\\ui\\views\\product\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:areas\\ui\\views\\product\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\areas\\ui\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:areas\\ui\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\areas\\ui\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:areas\\ui\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\utility\\sessionextenstion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:utility\\sessionextenstion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|d:\\just files\\c# - dotnet project\\ecommerce\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7BA5E4B-FB15-4BE4-99C2-1BC336D05B55}|Ecommerce.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-06T10:11:45.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:07:49.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompanyUser.cs",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Models\\CompanyUser.cs",
+              "RelativeDocumentMoniker": "Models\\CompanyUser.cs",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Models\\CompanyUser.cs",
+              "RelativeToolTip": "Models\\CompanyUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:04:22.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:02:46.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\UI\\Views\\Product\\Details.cshtml",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "Areas\\UI\\Views\\Product\\Details.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T09:33:58.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Views\\Product\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\UI\\Views\\Product\\Cart.cshtml",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Views\\Product\\Cart.cshtml",
+              "RelativeToolTip": "Areas\\UI\\Views\\Product\\Cart.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAUwDIAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T04:55:26.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Areas\\UI\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Areas\\UI\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T04:43:06.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SessionExtenstion.cs",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Utility\\SessionExtenstion.cs",
+              "RelativeDocumentMoniker": "Utility\\SessionExtenstion.cs",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Utility\\SessionExtenstion.cs",
+              "RelativeToolTip": "Utility\\SessionExtenstion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T03:37:57.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADMAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T03:29:33.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\UI\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\Areas\\UI\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Areas\\UI\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T02:55:36.687Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+﻿@model Ecommerce.Models.Products
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<div class="container">
+    <h2 class="text-info">Delete Product</h2>
+    <form method="post" asp-action="Delete" enctype="multipart/form-data">
+        <div class="p-4 rounded border">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <h3>
+                @ViewBag.message
+            </h3>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Name" ></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Name" class="form-control" disabled />
+
+                </div>
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Price"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Price" class="form-control" disabled />
+
+                </div>
+                <span asp-validation-for="Price"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Image"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Image" class="form-control" type="file" disabled />
+
+                </div>
+                <span asp-validation-for="Image"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="isAvailable"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="isAvailable" type="checkbox" disabled />
+
+
+                </div>
+                <span asp-validation-for="isAvailable"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductColor"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductColor" class="form-control" disabled />
+                </div>
+                <span asp-validation-for="ProductColor"></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="ProductTypeId"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="ProductTypeId" asp-items="@ViewBag.ProductTypeId" class="form-control" disabled />
+                </div>
+                <span asp-validation-for="ProductTypeId" ></span>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="SpecialTagId"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="SpecialTagId" asp-items="@ViewBag.TagId" class="form-control" disabled />
+
+                </div>
+                <span asp-validation-for="SpecialTagId"></span>
+            </div>
+            <button asp-action="Delete"class="btn btn-primary" asp-route-Id="@Model.Id">Delete</button>
+            <a asp-action="Index" class="btn btn-primary">Return to List</a>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    @* Client side validation *@
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
