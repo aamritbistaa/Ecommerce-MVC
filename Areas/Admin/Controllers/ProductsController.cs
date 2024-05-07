@@ -20,7 +20,7 @@ namespace Ecommerce.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            return View(_db.Products.Include(c=>c.ProductTypes).Include(d=>d.SpecialTags).ToList());
+            return View(_db.Products.Include(c => c.ProductTypes).Include(d => d.SpecialTags).ToList());
         }
 
 
@@ -48,22 +48,17 @@ namespace Ecommerce.Areas.Admin.Controllers
                 }
                 if (image != null)
                 {
-                    // Specify the directory path
                     string directoryPath = Path.Combine(_he.WebRootPath, "Images");
 
-                    // Check if the directory exists; if not, create it
                     if (!Directory.Exists(directoryPath))
                     {
                         Directory.CreateDirectory(directoryPath);
                     }
 
-                    // Combine the directory path and file name
                     string filePath = Path.Combine(directoryPath, Path.GetFileName(image.FileName));
 
-                    // Copy the file to the specified path
                     await image.CopyToAsync(new FileStream(filePath, FileMode.Create));
 
-                    // Update the Image property with the file path
                     obj.Image = "Images/" + image.FileName;
                 }
                 else
@@ -88,10 +83,10 @@ namespace Ecommerce.Areas.Admin.Controllers
         {
             ViewBag.ProductTypeId = new SelectList(_db.ProductTypes.ToList(), "Id", "ProductType");
             ViewBag.TagId = new SelectList(_db.SpecialTags.ToList(), "Id", "SpecialTag");
-            
+
             if (id == null) return NoContent();
 
-            var item = _db.Products.Include(c=>c.ProductTypes).Include(c=>c.SpecialTags).FirstOrDefault(c=>c.Id==id);
+            var item = _db.Products.Include(c => c.ProductTypes).Include(c => c.SpecialTags).FirstOrDefault(c => c.Id == id);
             if (item == null)
             {
                 return NotFound();
@@ -105,7 +100,7 @@ namespace Ecommerce.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Products obj, IFormFile? image)
         {
-            
+
             ViewBag.ProductTypeId = new SelectList(_db.ProductTypes.ToList(), "Id", "ProductType");
             ViewBag.TagId = new SelectList(_db.SpecialTags.ToList(), "Id", "SpecialTag");
             if (ModelState.IsValid)
@@ -115,7 +110,8 @@ namespace Ecommerce.Areas.Admin.Controllers
                     var name = Path.Combine(_he.WebRootPath + "/Images", Path.GetFileName(image.FileName));
                     await image.CopyToAsync(new FileStream(name, FileMode.Create));
                     obj.Image = "Images/" + image.FileName;
-                }else
+                }
+                else
                 {
                     //var existingItem = await _db.Products.FindAsync(obj.Id);
                     //obj.Image= existingItem.Image;
@@ -131,18 +127,19 @@ namespace Ecommerce.Areas.Admin.Controllers
         //Detail
         public IActionResult Details(int? id)
         {
-            if(id == null){
+            if (id == null)
+            {
                 return NotFound();
             }
-            var item = _db.Products.Include(c => c.ProductTypes).Include(d => d.SpecialTags).FirstOrDefault(c=>c.Id==id);
-            if(item == null) { return NotFound(); }
+            var item = _db.Products.Include(c => c.ProductTypes).Include(d => d.SpecialTags).FirstOrDefault(c => c.Id == id);
+            if (item == null) { return NotFound(); }
             return View(item);
         }
 
         //Delete
         public IActionResult Delete(int? id)
         {
-           
+
             if (id == null)
             {
                 return NotFound();

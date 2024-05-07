@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecommerce.Models
 {
-    public class User:IdentityUser
+    public class ApplicationUser : IdentityUser
     {
         [Required]
         public string Name { get; set; }

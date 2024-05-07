@@ -92,7 +92,7 @@ namespace Ecommerce.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            var spTag = _db.ProductTypes.Find(id);
+            var spTag = _db.SpecialTags.Find(id);
             if (spTag == null)
             {
                 return NotFound();
