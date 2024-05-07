@@ -1,4 +1,5 @@
 using Ecommerce.Data;
+using Ecommerce.Models;
 using Ecommerce.Utility;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -23,6 +24,8 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
+//builder.Services.AddScoped<UserManager<ApplicationUser>>();
+//builder.Services.AddScoped<RoleManager<IdentityRole>>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();

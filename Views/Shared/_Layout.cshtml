@@ -40,6 +40,9 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         
+                        @if (User.IsInRole(SD.Role_Seller))
+                        {
+                            
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
                             <div class="dropdown-menu">
@@ -48,13 +51,21 @@
                                 <a class="nav-link text-dark" asp-area="Admin" asp-controller="Products" asp-action="Index">Products</a>
                             </div>
                         </li>
+                        }
+
+                        @if (User.IsInRole(SD.Role_Admin))
+                        {
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="User" asp-action="GetAll">Users</a>
+                        }
+
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="UI" asp-controller="Product" asp-action="Index">Products</a>
-                            <a class="nav-link text-dark" asp-area="UI" asp-controller="Product" asp-action="Cart">Cart</a>
-                            (@count)
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="UI" asp-controller="Product" asp-action="Cart">Cart</a>(@count)
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />

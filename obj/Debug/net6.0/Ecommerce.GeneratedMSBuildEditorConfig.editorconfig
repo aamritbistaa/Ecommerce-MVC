@@ -78,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3BlY2lhbFRhZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Just Files/C\# - Dotnet Project/Ecommerce/Areas/Admin/Views/User/GetAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxHZXRBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Just Files/C\# - Dotnet Project/Ecommerce/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -276,6 +280,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Just Files/C\# - Dotnet Project/Ecommerce/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Just Files/C\# - Dotnet Project/Ecommerce/Views/Shared/_AdminNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk5hdmJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Just Files/C\# - Dotnet Project/Ecommerce/Views/Shared/_ButtonPartial.cshtml]

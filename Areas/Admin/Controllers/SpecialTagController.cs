@@ -1,10 +1,14 @@
 ﻿using Ecommerce.Data;
 using Ecommerce.Models;
+using Ecommerce.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Seller + "," + SD.Role_Admin)]
+
     public class SpecialTagsController : Controller
     {
         private readonly ApplicationDbContext _db;

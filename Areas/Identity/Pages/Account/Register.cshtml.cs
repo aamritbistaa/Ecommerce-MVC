@@ -127,46 +127,40 @@ namespace Ecommerce.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = CreateUser();
 
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
-                await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+
+                var user = new ApplicationUser
+                {
+                    UserName = Input.Email,
+                    Email=Input.Email,
+                    Name=Input.Name,
+                    Address=Input.Email,
+                    Role=Input.Role,
+                }; 
                 var result = await _userManager.CreateAsync(user, Input.Password);
-
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-
-                    //var userId = await _userManager.GetUserIdAsync(user);
-                    //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    //code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    //var callbackUrl = Url.Page(
-                    //    "/Account/ConfirmEmail",
-                    //    pageHandler: null,
-                    //    values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
-                    //    protocol: Request.Scheme);
-
-                    //await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                    //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
-                    if(!await _roleManager.RoleExistsAsync(SD.Role_Admin))
+                    if (!await _roleManager.RoleExistsAsync(SD.Role_Admin))
                     {
                         await _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin));
                     }
-                    if (!await _roleManager.RoleExistsAsync(SD.Role_Employee))
+                    if (!await _roleManager.RoleExistsAsync(SD.Role_Seller))
                     {
-                        await _roleManager.CreateAsync(new IdentityRole(SD.Role_Employee));
+                        await _roleManager.CreateAsync(new IdentityRole(SD.Role_Seller));
                     }
                     if (!await _roleManager.RoleExistsAsync(SD.Role_User))
                     {
                         await _roleManager.CreateAsync(new IdentityRole(SD.Role_User));
                     }
-                    if (!await _roleManager.RoleExistsAsync(SD.Role_User_Company))
+
+                    if (user.Role == null)
                     {
-                        await _roleManager.CreateAsync(new IdentityRole(SD.Role_User_Company));
+                        await _userManager.AddToRoleAsync(user, SD.Role_User);
                     }
-                    await _userManager.AddToRoleAsync(user, SD.Role_Admin);
                     
+                    //Add SUper User
+                    //await _userManager.AddToRoleAsync(user, SD.Role_Admin);
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
@@ -187,8 +181,10 @@ namespace Ecommerce.Areas.Identity.Pages.Account
             // If we got this far, something failed, redisplay form
             return Page();
         }
+    
 
-        private IdentityUser CreateUser()
+
+private IdentityUser CreateUser()
         {
             try
             {

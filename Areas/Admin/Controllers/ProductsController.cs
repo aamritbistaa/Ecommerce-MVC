@@ -1,5 +1,7 @@
 ﻿using Ecommerce.Data;
 using Ecommerce.Models;
+using Ecommerce.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +10,7 @@ using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
 namespace Ecommerce.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Seller + "," + SD.Role_Admin)]
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _db;

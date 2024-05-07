@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0m+RzOio99IJNMogk0/7xAsHq1RK75+jvKGoVKT8hcM=",
+  "Hash": "VPuV94zl5O/vO5Vqqe1bKtjgH739H+q4sIuO+PqTI+Q=",
   "Source": "Ecommerce",
   "BasePath": "_content/Ecommerce",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\wwwroot\\Images\\earbud.jpeg",
+      "SourceId": "Ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\wwwroot\\",
+      "BasePath": "_content/Ecommerce",
+      "RelativePath": "Images/earbud.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\earbud.jpeg"
     },
     {
       "Identity": "D:\\Just Files\\C# - Dotnet Project\\Ecommerce\\wwwroot\\Images\\Untitled.png",
